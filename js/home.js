@@ -6,7 +6,11 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     // get money to the added account 
     let tkAmount = document.getElementById('amount').value;
     let pinNumber = document.getElementById('pin-number').value;
-    if(pinNumber === 1234){
 
+    // verify pin number 
+    if(pinNumber === '1234'){
+        console.log('adding money to your wallet')
+    }else{
+        alert('failed to add money to your wallet')
     }
 })
