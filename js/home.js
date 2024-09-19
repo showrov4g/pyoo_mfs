@@ -16,7 +16,6 @@ document
         const tkAmountNumber = parseFloat(tkAmount);
         const balanceNumber = parseFloat(balance);
         const newBalance = balanceNumber + tkAmountNumber;
-        console.log(newBalance);
 
         // update the balance in the UI/ wallet
         document.getElementById('account-balance').innerText = newBalance;
