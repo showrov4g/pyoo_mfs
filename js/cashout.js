@@ -9,7 +9,9 @@ document
         let balance = document.getElementById('account-balance').innerText;
         let balanceNumber = parseFloat(balance);
         let cashoutNumber = parseFloat(casOut);
+        // reduce blance 
         let newBalance = balanceNumber - cashoutNumber;
+        // update balance to the Ul 
         document.getElementById('account-balance').innerText = newBalance;
     }else{
         alert('failed to Cash Out money to your wallet. Plese try again leter')
